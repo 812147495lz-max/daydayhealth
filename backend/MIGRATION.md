@@ -1,12 +1,12 @@
 # 已有后端如何切换到 DayDayHealth
 
-新部署直接使用[项目说明](../README.md#部署后端)。这份步骤适用于已经运行构建 94 归档接口的服务器。此次改名可沿用原业务数据库、训练记录、账号、健康归档和 API 路径。
+新部署直接使用[项目说明](../README.md#部署后端)。这份步骤适用于已经运行 `/api/v1/healthkit-archive` 归档接口的服务器。此次改名可沿用原业务数据库、训练记录、账号、健康归档和 API 路径。
 
 ## 需要改的地方
 
 | 配置项 | 新值或操作 |
 | --- | --- |
-| 构建源码 | 把这份 `backend/` 上传到服务器的新源码目录。 |
+| 源码目录 | 把这份 `backend/` 上传到服务器的新源码目录。 |
 | 镜像 | API 和 worker 都使用新源码重建，镜像可命名为 `daydayhealth-backend:local`。 |
 | Python 模块 | API 使用 `daydayhealth.main:app`，worker 使用 `python -m daydayhealth.worker_main`，管理命令使用 `python -m daydayhealth.cli`。新 Dockerfile 已配置 API 入口。 |
 | 环境变量 | 将旧项目大写前缀换成 `DAYDAYHEALTH_`，保留后缀和实际配置值。 |
@@ -15,7 +15,7 @@
 ## 服务器上实际要做的步骤
 
 1. 记录当前 Compose 项目名、镜像、端口、各挂载（包括 openGym 的只读数据卷）和环境变量来源。停止 API 和 worker 写入，从同一个时点备份业务 SQLite、独立健康归档目录、账号白名单、profiles、archive、签名密钥以及当前 Compose 配置。保留当前源码和镜像用于回退。
-2. 在原 Compose 项目中复制一份生产配置，更新 API 和 worker 的构建路径，指向上传的新 `backend/`。将镜像名和 worker 的启动命令换成上表的新值。如果现网给 API 写了显式启动命令，也更新模块名。保留此前的项目名、服务键、端口和挂载目标。
+2. 在原 Compose 项目中复制一份生产配置，将 API 和 worker 的 `build.context` 指向上传的新 `backend/`。将镜像名和 worker 的启动命令换成上表的新值。如果现网给 API 写了显式启动命令，也更新模块名。保留此前的项目名、服务键、端口和挂载目标。
 3. 在新配置和它读取的 `.env` 中改变量名。如下变量的**值**应继续指向当前实例的路径或配置。若原来靠默认值，请现在显式填写旧实例的实际值。
 
    | 变量 | 值填什么 |

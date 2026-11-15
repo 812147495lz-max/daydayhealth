@@ -4,7 +4,7 @@
 
 [功能](#功能) · [快速开始](#快速开始) · [部署后端](#部署后端) · [连接手机](#连接手机) · [接入 openGym](#接入-opengym) · [备份与恢复](#备份与恢复)
 
-当前文档对应 **iOS 1.0.2（构建 98）** 和实现 `/api/v1/healthkit-archive` 的 **配套后端**。
+当前文档对应 **iOS 1.0.2** 和实现 `/api/v1/healthkit-archive` 的 **配套后端**。
 
 ## 功能
 
@@ -17,13 +17,13 @@
 | AI 健康日报 | 手动生成或重新生成昨日日报，结合可用的近期记录分析变化。开启环境数据共享后，可参考天气与空气质量，有明显影响时才在日报里提及。 |
 | 本地通知与备份 | 日报生成后可安排 iOS 本地通知。App 也提供「备份与恢复」入口，可将快照保存到已登录的服务器。 |
 
-Apple 健康的归档范围由设备、HealthKit 接口和授权共同决定。临床记录、医疗文件、眼镜处方和用药记录在「Apple 健康权限」中分别申请。iOS 26 起，用药按药物逐项授权，构建 98 将它从首次普通授权请求中分离。
+Apple 健康的归档范围由设备、HealthKit 接口和授权共同决定。临床记录、医疗文件、眼镜处方和用药记录在「Apple 健康权限」中分别申请。iOS 26 起，在「Apple 健康权限」中逐项授权用药记录。
 
 开启「每日通知」后，日报默认从 **07:30** 起尝试准备，目标通知时间为 **08:00**。实际时间取决于 iOS 后台唤醒和生成进度，通知由手机本地安排。
 
 ## 快速开始
 
-1. 准备一台 **iOS 17 或更新版本**的 iPhone，以及支持项目所用 iOS SDK 的 Xcode。当前版本用 Xcode 27 构建。
+1. 准备一台 **iOS 17 或更新版本**的 iPhone。用源码安装时，Mac 上可使用 Xcode 27。
 2. 只在手机上查看 Apple 健康、记录饮食或使用 AI 时，可以先安装客户端，直接使用手机端功能。要同步到自己的服务器，再完成下文的部署和登录。
 3. 要在手机上看到已有的 openGym 训练，部署后端后接入自己的 openGym 数据卷，并把对应的用户 ID 映射到登录账号。
 4. 要用 AI，到「设置 → AI 模型」配置模型地址、模型 ID 和 API Key。AI 由手机直连服务商，自托管后端无需配置模型密钥。
@@ -34,7 +34,7 @@ iOS 工程位于 `iOS/`，后端位于 `backend/`。已有服务器可先看[后
 
 **用 Xcode 自行签名。** 打开 `iOS/DayDayHealth.xcodeproj`，选择 `DayDayHealth` target，在 *Signing & Capabilities* 中选自己的 Team。需要时改为该 Team 可签发的 Bundle Identifier，确认 HealthKit 已启用。要使用后台健康数据交付或临床记录，还需确保签名的描述文件包含相应能力。选择已配对的 iPhone 运行。 [Apple 的 HealthKit 配置说明](https://developer.apple.com/documentation/xcode/configuring-healthkit-access)
 
-**用 Sideloadly 安装。** 有 IPA 时，在 Mac 或 Windows 上将它拖入 [Sideloadly](https://sideloadly.io/)，选择目标 iPhone 和自己的 Apple Account，按提示重签并安装。重签后的签名与描述文件必须支持 HealthKit。成功装上 App 后，在首次打开时检查是否弹出了 Apple 健康权限窗口。第三方账号用 Sideloadly 从零安装并完成全程同步，仍待真机验收。
+**用 Sideloadly 安装。** 下载 [DayDayHealth-1.0.2.ipa](https://github.com/812147495lz-max/daydayhealth/releases/download/v1.0.2/DayDayHealth-1.0.2.ipa)。在 Mac 或 Windows 上将它拖入 [Sideloadly](https://sideloadly.io/)，选择目标 iPhone 和自己的 Apple Account，按提示重签并安装。重签后的签名与描述文件必须支持 HealthKit。成功装上 App 后，在首次打开时检查是否弹出了 Apple 健康权限窗口。第三方账号用 Sideloadly 从零安装并完成全程同步，仍待真机验收。
 
 **验证首次启动。** 可用独立 Bundle ID 签一份测试版，与原 App 同时安装。首次打开时检查普通 Apple 健康授权弹窗，处理弹窗后确认能进入首页。独立标识有自己的数据容器，登录和模型配置需要重新填写。
 
