@@ -1,0 +1,6 @@
+{
+  "error": {
+    "code": "cursor_invalid",
+    "message": "The supplied cursor is invalid or no longer usable."
+  }
+}

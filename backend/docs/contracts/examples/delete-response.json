@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "next_cursor": "eyJhIjowLCJtIjoiaW5jIiwicyI6OCwidSI6IndiX3Vzcl9leGFtcGxlIiwidiI6MX0.1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d",
+  "has_more": false,
+  "changes": [
+    {
+      "op": "delete",
+      "workout_id": "wb_123",
+      "workout": null
+    }
+  ]
+}

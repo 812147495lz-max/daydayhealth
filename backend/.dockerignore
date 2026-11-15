@@ -1,0 +1,15 @@
+.venv/
+.tmp/
+runtime/
+__pycache__/
+*.pyc
+.pytest_cache/
+tests/
+docs/
+*.db
+*.db-wal
+*.db-shm
+.git/
+secrets/
+.pytest_cache/
+scripts/

@@ -1,0 +1,20 @@
+services:
+  api:
+    build: .
+    image: daydayhealth-backend:local
+    restart: unless-stopped
+    init: true
+    read_only: true
+    security_opt:
+      - no-new-privileges:true
+    tmpfs:
+      - /tmp
+    ports:
+      - "127.0.0.1:18090:8000"
+    environment:
+      DAYDAYHEALTH_DB: /var/lib/daydayhealth/daydayhealth.db
+      DAYDAYHEALTH_USER_CSV: /config/yonghu.csv
+      DAYDAYHEALTH_LOGIN_HOSTS: ""
+    volumes:
+      - ./runtime:/var/lib/daydayhealth
+      - ./config:/config

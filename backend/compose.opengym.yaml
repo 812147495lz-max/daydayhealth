@@ -1,0 +1,28 @@
+services:
+  worker:
+    build: .
+    image: daydayhealth-backend:local
+    command: ["python", "-m", "daydayhealth.worker_main"]
+    restart: unless-stopped
+    init: true
+    read_only: true
+    security_opt:
+      - no-new-privileges:true
+    tmpfs:
+      - /tmp
+    depends_on:
+      - api
+    environment:
+      DAYDAYHEALTH_DB: /var/lib/daydayhealth/daydayhealth.db
+      DAYDAYHEALTH_USER_CSV: /config/yonghu.csv
+      OPENGYM_DATA_DIR: /opengym-data
+      SYNC_INTERVAL_SECONDS: "60"
+    volumes:
+      - ./runtime:/var/lib/daydayhealth
+      - ./config:/config
+      - opengym_data:/opengym-data:ro
+
+volumes:
+  opengym_data:
+    external: true
+    name: sport_opengym_data

@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+  "archiveVersion" = "1";
+  "classes" = {
+  };
+  "objectVersion" = "56";
+  "objects" = {
+    "CF26DC79561E2030CE369431" = {
+      "isa" = "PBXFileReference";
+      "path" = "AppleHealthArchiveSync.swift";
+      "lastKnownFileType" = "sourcecode.swift";
+      "sourceTree" = "<group>";
+    };
+    "D5D4105B77D18D9DEDA5F919" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "CF26DC79561E2030CE369431";
+    };
+    "F754AEF4E5D91F7BC789BFC1" = {
+      "isa" = "PBXFileReference";
+      "path" = "AppleHealthArchiveTypeCatalog.swift";
+      "lastKnownFileType" = "sourcecode.swift";
+      "sourceTree" = "<group>";
+    };
+    "A958C5E0BA7B8B862B6D24C1" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "F754AEF4E5D91F7BC789BFC1";
+    };
+    "2A8706AAE5381B0B7639D3CC" = {
+      "isa" = "PBXFileReference";
+      "path" = "AppleHealthArchiveRecords.swift";
+      "lastKnownFileType" = "sourcecode.swift";
+      "sourceTree" = "<group>";
+    };
+    "11C6EDF3D4709B825ACA7CCC" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "2A8706AAE5381B0B7639D3CC";
+    };
+    "8E5A67818EC7EE4EF628C560" = {
+      "isa" = "PBXFileReference";
+      "path" = "APIClient.swift";
+      "lastKnownFileType" = "sourcecode.swift";
+      "sourceTree" = "<group>";
+    };
+    "B70EF8F287B988A45022836E" = {
+      "isa" = "PBXFileReference";
+      "path" = "App.swift";
+      "lastKnownFileType" = "sourcecode.swift";
+      "sourceTree" = "<group>";
+    };
+    "F50CD2529D1F61D0A691EFA7" = {
+      "isa" = "PBXFileReference";
+      "path" = "AppModels.swift";
+      "lastKnownFileType" = "sourcecode.swift";
+      "sourceTree" = "<group>";
+    };
+    "1063AF6F808FB2DC91671168" = {
+      "isa" = "PBXFileReference";
+      "path" = "ChatScreen.swift";
+      "lastKnownFileType" = "sourcecode.swift";
+      "sourceTree" = "<group>";
+    };
+    "3C4D5BF81259353996C99C21" = {
+      "isa" = "PBXFileReference";
+      "path" = "ContentView.swift";
+      "lastKnownFileType" = "sourcecode.swift";
+      "sourceTree" = "<group>";
+    };
+    "13D2E5C653A62F84EB9D5B54" = {
+      "isa" = "PBXFileReference";
+      "path" = "DesignSystem.swift";
+      "lastKnownFileType" = "sourcecode.swift";
+      "sourceTree" = "<group>";
+    };
+    "A2E28BCD96666C8113C8295B" = {
+      "isa" = "PBXFileReference";
+      "path" = "HealthMetricsSync.swift";
+      "lastKnownFileType" = "sourcecode.swift";
+      "sourceTree" = "<group>";
+    };
+    "EA1AAC6FA433AD3FBC15C45A" = {
+      "isa" = "PBXFileReference";
+      "path" = "HealthSync.swift";
+      "lastKnownFileType" = "sourcecode.swift";
+      "sourceTree" = "<group>";
+    };
+    "F56C1E73FE6DB8A6AA2BBD2C" = {
+      "isa" = "PBXFileReference";
+      "path" = "KeychainStore.swift";
+      "lastKnownFileType" = "sourcecode.swift";
+      "sourceTree" = "<group>";
+    };
+    "2FBE53C0EE8DC3314E38666F" = {
+      "isa" = "PBXFileReference";
+      "path" = "LocalCache.swift";
+      "lastKnownFileType" = "sourcecode.swift";
+      "sourceTree" = "<group>";
+    };
+    "17864C2B41D90458A3F14234" = {
+      "isa" = "PBXFileReference";
+      "path" = "NotificationSync.swift";
+      "lastKnownFileType" = "sourcecode.swift";
+      "sourceTree" = "<group>";
+    };
+    "8A227D86C3369276534E6E91" = {
+      "isa" = "PBXFileReference";
+      "path" = "SettingsScreen.swift";
+      "lastKnownFileType" = "sourcecode.swift";
+      "sourceTree" = "<group>";
+    };
+    "F396AA75DED06AA1481FCF6D" = {
+      "isa" = "PBXFileReference";
+      "path" = "TasksScreen.swift";
+      "lastKnownFileType" = "sourcecode.swift";
+      "sourceTree" = "<group>";
+    };
+    "F907BA5293E0F293ADFE7281" = {
+      "isa" = "PBXFileReference";
+      "path" = "TodayScreen.swift";
+      "lastKnownFileType" = "sourcecode.swift";
+      "sourceTree" = "<group>";
+    };
+    "A1F2CC120E10A96400059087" = {
+      "isa" = "PBXFileReference";
+      "path" = "HealthNotificationDelegate.swift";
+      "lastKnownFileType" = "sourcecode.swift";
+      "sourceTree" = "<group>";
+    };
+    "4F9CC0E666F23F82BC0B7D47" = {
+      "isa" = "PBXFileReference";
+      "path" = "HealthStore.swift";
+      "lastKnownFileType" = "sourcecode.swift";
+      "sourceTree" = "<group>";
+    };
+    "DE8FFF2746F5454D8C8A85C7" = {
+      "isa" = "PBXFileReference";
+      "path" = "WorkoutsScreen.swift";
+      "lastKnownFileType" = "sourcecode.swift";
+      "sourceTree" = "<group>";
+    };
+    "5B8E3789A77D0658ECDF5E95" = {
+      "isa" = "PBXFileReference";
+      "path" = "WorkoutSyncService.swift";
+      "lastKnownFileType" = "sourcecode.swift";
+      "sourceTree" = "<group>";
+    };
+    "BCB63291DA7913E258349BCC" = {
+      "isa" = "PBXFileReference";
+      "path" = "DebugHealthImport.swift";
+      "lastKnownFileType" = "sourcecode.swift";
+      "sourceTree" = "<group>";
+    };
+    "3AA5EDC7C400DD09DD0175EA" = {
+      "isa" = "PBXFileReference";
+      "path" = "HealthMetricCatalog.json";
+      "lastKnownFileType" = "text.json";
+      "sourceTree" = "<group>";
+    };
+    "13ADF2AB23E7051BFAE01A83" = {
+      "isa" = "PBXFileReference";
+      "path" = "HealthMetricCatalog.swift";
+      "lastKnownFileType" = "sourcecode.swift";
+      "sourceTree" = "<group>";
+    };
+    "CF279364CA66321959B404BF" = {
+      "isa" = "PBXFileReference";
+      "path" = "HealthTrendRepository.swift";
+      "lastKnownFileType" = "sourcecode.swift";
+      "sourceTree" = "<group>";
+    };
+    "6DB92EEA1BE8B850200C26F3" = {
+      "isa" = "PBXFileReference";
+      "path" = "HealthDashboard.swift";
+      "lastKnownFileType" = "sourcecode.swift";
+      "sourceTree" = "<group>";
+    };
+    "886217199DC8C6B5DC73D571" = {
+      "isa" = "PBXFileReference";
+      "path" = "HealthOutboxDB.swift";
+      "lastKnownFileType" = "sourcecode.swift";
+      "sourceTree" = "<group>";
+    };
+    "74D014E1C4FF6025A133477C" = {
+      "isa" = "PBXFileReference";
+      "path" = "ChatTopicStore.swift";
+      "lastKnownFileType" = "sourcecode.swift";
+      "sourceTree" = "<group>";
+    };
+    "3B51B65EE1D291CDEACB4C91" = {
+      "isa" = "PBXFileReference";
+      "path" = "AIDataAuthorization.swift";
+      "lastKnownFileType" = "sourcecode.swift";
+      "sourceTree" = "<group>";
+    };
+    "27551FC049275871268C5E48" = {
+      "isa" = "PBXFileReference";
+      "path" = "LegacyServerIdentity.swift";
+      "lastKnownFileType" = "sourcecode.swift";
+      "sourceTree" = "<group>";
+    };
+    "57C10280AA6031D728A78323" = {
+      "isa" = "PBXFileReference";
+      "path" = "MealNutritionCatalog.swift";
+      "lastKnownFileType" = "sourcecode.swift";
+      "sourceTree" = "<group>";
+    };
+    "5F6B2CF63A9FAC7C2CC68618" = {
+      "isa" = "PBXFileReference";
+      "path" = "PackagedNutritionLabel.swift";
+      "lastKnownFileType" = "sourcecode.swift";
+      "sourceTree" = "<group>";
+    };
+    "CAE2B12BD1AF908FCCCAFB77" = {
+      "isa" = "PBXFileReference";
+      "path" = "FoodNutritionCatalog.json";
+      "lastKnownFileType" = "text.json";
+      "sourceTree" = "<group>";
+    };
+    "22036E202BB4EE8B3CA63700" = {
+      "isa" = "PBXFileReference";
+      "path" = "ChineseHomeNutritionCatalog.json";
+      "lastKnownFileType" = "text.json";
+      "sourceTree" = "<group>";
+    };
+    "7616BD3443362BFE326F0599" = {
+      "isa" = "PBXFileReference";
+      "path" = "ChineseFoodNutritionCatalog.json";
+      "lastKnownFileType" = "text.json";
+      "sourceTree" = "<group>";
+    };
+    "890F6769DA9EB89E300435D5" = {
+      "isa" = "PBXFileReference";
+      "path" = "ChinaPackagedFoodCatalog.json";
+      "lastKnownFileType" = "text.json";
+      "sourceTree" = "<group>";
+    };
+    "95401C00B3D3CDF24092DCD1" = {
+      "isa" = "PBXFileReference";
+      "path" = "ManufacturerPackagedFoodCatalog.json";
+      "lastKnownFileType" = "text.json";
+      "sourceTree" = "<group>";
+    };
+    "E4E2386620EAF1D416C87C87" = {
+      "isa" = "PBXFileReference";
+      "path" = "WorkoutExerciseNames.json";
+      "lastKnownFileType" = "text.json";
+      "sourceTree" = "<group>";
+    };
+    "FE80E3F87CB39540234A145A" = {
+      "isa" = "PBXFileReference";
+      "path" = "HealthSpecialCharts.swift";
+      "lastKnownFileType" = "sourcecode.swift";
+      "sourceTree" = "<group>";
+    };
+    "795A02A63DC9C1E86758E98F" = {
+      "isa" = "PBXFileReference";
+      "path" = "Assets.xcassets";
+      "lastKnownFileType" = "folder.assetcatalog";
+      "sourceTree" = "<group>";
+    };
+    "1A5C604F9FB6F7C3ED618296" = {
+      "isa" = "PBXFileReference";
+      "path" = "MealEnergyOverview.swift";
+      "lastKnownFileType" = "sourcecode.swift";
+      "sourceTree" = "<group>";
+    };
+    "702E717786DF5F0F9BE9329C" = {
+      "isa" = "PBXFileReference";
+      "path" = "AppBackup.swift";
+      "lastKnownFileType" = "sourcecode.swift";
+      "sourceTree" = "<group>";
+    };
+    "91FF47091DA17F039B917519" = {
+      "isa" = "PBXFileReference";
+      "path" = "DailyDigest.swift";
+      "lastKnownFileType" = "sourcecode.swift";
+      "sourceTree" = "<group>";
+    };
+    "C05D14875647AA8A7292BCD1" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "8E5A67818EC7EE4EF628C560";
+    };
+    "FAAABC8859257506600B508B" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "B70EF8F287B988A45022836E";
+    };
+    "E5311F8341911782F0F76B11" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "F50CD2529D1F61D0A691EFA7";
+    };
+    "865C2DD7F4ACB6182E2154A1" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "1063AF6F808FB2DC91671168";
+    };
+    "2078171011ED6B25B697700A" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "3C4D5BF81259353996C99C21";
+    };
+    "2DD6DA83501095FB59F49A9F" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "13D2E5C653A62F84EB9D5B54";
+    };
+    "A65C0AD07DF6E2884087FB72" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "A2E28BCD96666C8113C8295B";
+    };
+    "C8066213CD7C0EE51BB643D6" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "EA1AAC6FA433AD3FBC15C45A";
+    };
+    "2BEB32C8E32DD189D53B56C2" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "F56C1E73FE6DB8A6AA2BBD2C";
+    };
+    "D4F8048DD9ADAE37215B3F45" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "2FBE53C0EE8DC3314E38666F";
+    };
+    "1335AD4354A2F8A62921DD22" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "17864C2B41D90458A3F14234";
+    };
+    "2A7CFC8D75073BE0A3DAA16C" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "8A227D86C3369276534E6E91";
+    };
+    "9BDE1AA657BAD66D616C67AA" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "F396AA75DED06AA1481FCF6D";
+    };
+    "FB960707D3252EE73984CBD4" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "F907BA5293E0F293ADFE7281";
+    };
+    "5412CED364CE2742BD5FCA28" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "A1F2CC120E10A96400059087";
+    };
+    "CB55DBC42FCBB6E1177F8880" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "4F9CC0E666F23F82BC0B7D47";
+    };
+    "E1C51F6ECFE9584AFCC74D3A" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "DE8FFF2746F5454D8C8A85C7";
+    };
+    "86DF487DD6E703EC248A13B4" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "5B8E3789A77D0658ECDF5E95";
+    };
+    "C1531423F410083C83A7AF85" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "BCB63291DA7913E258349BCC";
+    };
+    "DE5C79B858CD6ED0BFE41719" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "13ADF2AB23E7051BFAE01A83";
+    };
+    "9EC078105D164D6517C14D06" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "CF279364CA66321959B404BF";
+    };
+    "53E8DF3BBE51027E581D57AC" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "6DB92EEA1BE8B850200C26F3";
+    };
+    "249C45F56106F4586CEC714C" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "886217199DC8C6B5DC73D571";
+    };
+    "5BA1A0363F080FD8F8E55AE3" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "74D014E1C4FF6025A133477C";
+    };
+    "59B158F3D6B49D007781D55A" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "3B51B65EE1D291CDEACB4C91";
+    };
+    "7A9B23BE79A634EB02A9FC2C" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "27551FC049275871268C5E48";
+    };
+    "800CBCC0E8360154734FC4DF" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "57C10280AA6031D728A78323";
+    };
+    "E6BF16DD753F9E96C2443EB2" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "5F6B2CF63A9FAC7C2CC68618";
+    };
+    "72F2B48778D50F830906BF8F" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "FE80E3F87CB39540234A145A";
+    };
+    "531437D46E5908343E2D95A8" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "1A5C604F9FB6F7C3ED618296";
+    };
+    "CD8B419D417CE4FC7725EC9B" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "702E717786DF5F0F9BE9329C";
+    };
+    "FBEB4E0B00E0AAF54AFBE77B" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "91FF47091DA17F039B917519";
+    };
+    "FC51F675CFA04504BC9B299A" = {
+      "isa" = "PBXSourcesBuildPhase";
+      "buildActionMask" = "2147483647";
+      "runOnlyForDeploymentPostprocessing" = "0";
+      "files" = ("D5D4105B77D18D9DEDA5F919", "A958C5E0BA7B8B862B6D24C1", "11C6EDF3D4709B825ACA7CCC", "C05D14875647AA8A7292BCD1", "FAAABC8859257506600B508B", "E5311F8341911782F0F76B11", "865C2DD7F4ACB6182E2154A1", "2078171011ED6B25B697700A", "2DD6DA83501095FB59F49A9F", "A65C0AD07DF6E2884087FB72", "C8066213CD7C0EE51BB643D6", "2BEB32C8E32DD189D53B56C2", "D4F8048DD9ADAE37215B3F45", "1335AD4354A2F8A62921DD22", "2A7CFC8D75073BE0A3DAA16C", "9BDE1AA657BAD66D616C67AA", "FB960707D3252EE73984CBD4", "5412CED364CE2742BD5FCA28", "CB55DBC42FCBB6E1177F8880", "E1C51F6ECFE9584AFCC74D3A", "86DF487DD6E703EC248A13B4", "C1531423F410083C83A7AF85", "DE5C79B858CD6ED0BFE41719", "9EC078105D164D6517C14D06", "53E8DF3BBE51027E581D57AC", "249C45F56106F4586CEC714C", "5BA1A0363F080FD8F8E55AE3", "59B158F3D6B49D007781D55A", "7A9B23BE79A634EB02A9FC2C", "800CBCC0E8360154734FC4DF", "E6BF16DD753F9E96C2443EB2", "72F2B48778D50F830906BF8F", "531437D46E5908343E2D95A8", "CD8B419D417CE4FC7725EC9B", "FBEB4E0B00E0AAF54AFBE77B");
+    };
+    "5C52B4B026E2D3577270DA12" = {
+      "isa" = "PBXFrameworksBuildPhase";
+      "buildActionMask" = "2147483647";
+      "runOnlyForDeploymentPostprocessing" = "0";
+      "files" = ();
+    };
+    "87B6BB57ACE65FED0A350FF7" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "3AA5EDC7C400DD09DD0175EA";
+    };
+    "E50747276435ADA0EF78EBC1" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "CAE2B12BD1AF908FCCCAFB77";
+    };
+    "FA5F25861C4CAB49E8824998" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "22036E202BB4EE8B3CA63700";
+    };
+    "60E7A09C3DF185D0B16DFB9F" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "7616BD3443362BFE326F0599";
+    };
+    "0B0E67A5E2020AE19BECB236" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "890F6769DA9EB89E300435D5";
+    };
+    "0A6C660EC8472F7D0F9C91BA" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "95401C00B3D3CDF24092DCD1";
+    };
+    "484A040370BC03F164B65CA0" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "E4E2386620EAF1D416C87C87";
+    };
+    "B8D8EFDADCF2B9F2BB171C57" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "795A02A63DC9C1E86758E98F";
+    };
+    "A08C54AF8A42B43E05313183" = {
+      "isa" = "PBXResourcesBuildPhase";
+      "buildActionMask" = "2147483647";
+      "runOnlyForDeploymentPostprocessing" = "0";
+      "files" = ("87B6BB57ACE65FED0A350FF7", "E50747276435ADA0EF78EBC1", "FA5F25861C4CAB49E8824998", "60E7A09C3DF185D0B16DFB9F", "0B0E67A5E2020AE19BECB236", "0A6C660EC8472F7D0F9C91BA", "484A040370BC03F164B65CA0", "B8D8EFDADCF2B9F2BB171C57");
+    };
+    "A8792157CB4F27FB949C035F" = {
+      "isa" = "PBXFileReference";
+      "explicitFileType" = "wrapper.application";
+      "path" = "DayDayHealth.app";
+      "sourceTree" = "BUILT_PRODUCTS_DIR";
+    };
+    "878A52FC5FF6A57D50B7B870" = {
+      "isa" = "PBXGroup";
+      "path" = "DayDayHealth";
+      "sourceTree" = "<group>";
+      "children" = ("CF26DC79561E2030CE369431", "F754AEF4E5D91F7BC789BFC1", "2A8706AAE5381B0B7639D3CC", "8E5A67818EC7EE4EF628C560", "B70EF8F287B988A45022836E", "F50CD2529D1F61D0A691EFA7", "1063AF6F808FB2DC91671168", "3C4D5BF81259353996C99C21", "13D2E5C653A62F84EB9D5B54", "A2E28BCD96666C8113C8295B", "EA1AAC6FA433AD3FBC15C45A", "F56C1E73FE6DB8A6AA2BBD2C", "2FBE53C0EE8DC3314E38666F", "17864C2B41D90458A3F14234", "8A227D86C3369276534E6E91", "F396AA75DED06AA1481FCF6D", "F907BA5293E0F293ADFE7281", "A1F2CC120E10A96400059087", "4F9CC0E666F23F82BC0B7D47", "DE8FFF2746F5454D8C8A85C7", "5B8E3789A77D0658ECDF5E95", "BCB63291DA7913E258349BCC", "3AA5EDC7C400DD09DD0175EA", "13ADF2AB23E7051BFAE01A83", "CF279364CA66321959B404BF", "6DB92EEA1BE8B850200C26F3", "886217199DC8C6B5DC73D571", "74D014E1C4FF6025A133477C", "3B51B65EE1D291CDEACB4C91", "27551FC049275871268C5E48", "57C10280AA6031D728A78323", "5F6B2CF63A9FAC7C2CC68618", "CAE2B12BD1AF908FCCCAFB77", "22036E202BB4EE8B3CA63700", "7616BD3443362BFE326F0599", "890F6769DA9EB89E300435D5", "95401C00B3D3CDF24092DCD1", "E4E2386620EAF1D416C87C87", "FE80E3F87CB39540234A145A", "795A02A63DC9C1E86758E98F", "1A5C604F9FB6F7C3ED618296", "702E717786DF5F0F9BE9329C", "91FF47091DA17F039B917519");
+    };
+    "0A3E27B8CA818264D75C8D81" = {
+      "isa" = "PBXGroup";
+      "name" = "Products";
+      "sourceTree" = "<group>";
+      "children" = ("A8792157CB4F27FB949C035F");
+    };
+    "4813494D137E1631BBA301D5" = {
+      "isa" = "PBXGroup";
+      "sourceTree" = "<group>";
+      "children" = ("878A52FC5FF6A57D50B7B870", "0A3E27B8CA818264D75C8D81");
+    };
+    "4A0B97115BC13E6884DE76E6" = {
+      "isa" = "XCBuildConfiguration";
+      "name" = "Debug";
+      "buildSettings" = {
+        "ASSETCATALOG_COMPILER_APPICON_NAME" = "AppIcon";
+        "CODE_SIGN_ENTITLEMENTS" = "DayDayHealth/DayDayHealth.entitlements";
+        "CODE_SIGN_STYLE" = "Automatic";
+        "CURRENT_PROJECT_VERSION" = "98";
+        "GENERATE_INFOPLIST_FILE" = "YES";
+        "INFOPLIST_FILE" = "AppInfo.plist";
+        "INFOPLIST_KEY_CFBundleDisplayName" = "天天健康";
+        "INFOPLIST_KEY_NSAppTransportSecurity_NSAllowsLocalNetworking" = "YES";
+        "INFOPLIST_KEY_NSHealthShareUsageDescription" = "读取你允许的健康和训练记录，用于查看健康趋势、生成日报和建立个人健康档案。个人档案可保存在你选择的服务器。";
+        "INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription" = "读取你允许访问的临床健康记录，用于保存在你选择的个人健康档案中。";
+        "INFOPLIST_KEY_NSHealthUpdateUsageDescription" = "经你确认后，将这顿饭的热量、蛋白质、脂肪和碳水写入 Apple 健康。";
+        "INFOPLIST_KEY_NSHealthUpdateUsageDescription[sdk=iphonesimulator*]" = "Write imported test samples to the simulator HealthKit store.";
+        "INFOPLIST_KEY_UIApplicationSceneManifest_Generation" = "YES";
+        "INFOPLIST_KEY_UILaunchScreen_Generation" = "YES";
+        "LD_RUNPATH_SEARCH_PATHS" = "$(inherited) @executable_path/Frameworks";
+        "MARKETING_VERSION" = "1.0.2";
+        "OTHER_LDFLAGS" = "$(inherited) -lsqlite3";
+        "PRODUCT_BUNDLE_IDENTIFIER" = "org.daydayhealth.app";
+        "PRODUCT_NAME" = "$(TARGET_NAME)";
+        "SUPPORTS_MACCATALYST" = "YES";
+        "SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "DEBUG $(inherited)";
+        "SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+        "TARGETED_DEVICE_FAMILY" = "1,2";
+      };
+    };
+    "F4A44393B0A9D71501AA8E1E" = {
+      "isa" = "XCBuildConfiguration";
+      "name" = "Release";
+      "buildSettings" = {
+        "ASSETCATALOG_COMPILER_APPICON_NAME" = "AppIcon";
+        "CODE_SIGN_ENTITLEMENTS" = "DayDayHealth/DayDayHealth.entitlements";
+        "CODE_SIGN_STYLE" = "Automatic";
+        "CURRENT_PROJECT_VERSION" = "98";
+        "GENERATE_INFOPLIST_FILE" = "YES";
+        "INFOPLIST_FILE" = "AppInfo.plist";
+        "INFOPLIST_KEY_CFBundleDisplayName" = "天天健康";
+        "INFOPLIST_KEY_NSAppTransportSecurity_NSAllowsLocalNetworking" = "YES";
+        "INFOPLIST_KEY_NSHealthShareUsageDescription" = "读取你允许的健康和训练记录，用于查看健康趋势、生成日报和建立个人健康档案。个人档案可保存在你选择的服务器。";
+        "INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription" = "读取你允许访问的临床健康记录，用于保存在你选择的个人健康档案中。";
+        "INFOPLIST_KEY_NSHealthUpdateUsageDescription" = "经你确认后，将这顿饭的热量、蛋白质、脂肪和碳水写入 Apple 健康。";
+        "INFOPLIST_KEY_UIApplicationSceneManifest_Generation" = "YES";
+        "INFOPLIST_KEY_UILaunchScreen_Generation" = "YES";
+        "LD_RUNPATH_SEARCH_PATHS" = "$(inherited) @executable_path/Frameworks";
+        "MARKETING_VERSION" = "1.0.2";
+        "OTHER_LDFLAGS" = "$(inherited) -lsqlite3";
+        "PRODUCT_BUNDLE_IDENTIFIER" = "org.daydayhealth.app";
+        "PRODUCT_NAME" = "$(TARGET_NAME)";
+        "SUPPORTS_MACCATALYST" = "YES";
+        "SWIFT_OPTIMIZATION_LEVEL" = "-O";
+        "TARGETED_DEVICE_FAMILY" = "1,2";
+      };
+    };
+    "DB50D715B6F73174E8B96DCF" = {
+      "isa" = "XCConfigurationList";
+      "buildConfigurations" = ("4A0B97115BC13E6884DE76E6", "F4A44393B0A9D71501AA8E1E");
+      "defaultConfigurationIsVisible" = "0";
+      "defaultConfigurationName" = "Release";
+    };
+    "34A04005BCAF206EEC990BD9" = {
+      "isa" = "PBXNativeTarget";
+      "name" = "DayDayHealth";
+      "productName" = "DayDayHealth";
+      "productType" = "com.apple.product-type.application";
+      "productReference" = "A8792157CB4F27FB949C035F";
+      "buildConfigurationList" = "DB50D715B6F73174E8B96DCF";
+      "buildPhases" = ("FC51F675CFA04504BC9B299A", "5C52B4B026E2D3577270DA12", "A08C54AF8A42B43E05313183");
+      "buildRules" = ();
+      "dependencies" = ();
+    };
+    "A06D67BFB6E2C35896D0DED1" = {
+      "isa" = "XCBuildConfiguration";
+      "name" = "Debug";
+      "buildSettings" = {
+        "CLANG_ENABLE_MODULES" = "YES";
+        "IPHONEOS_DEPLOYMENT_TARGET" = "17.0";
+        "SDKROOT" = "iphoneos";
+        "SWIFT_VERSION" = "5.0";
+      };
+    };
+    "BCEE7239182F4A06F96EBAEC" = {
+      "isa" = "XCBuildConfiguration";
+      "name" = "Release";
+      "buildSettings" = {
+        "CLANG_ENABLE_MODULES" = "YES";
+        "IPHONEOS_DEPLOYMENT_TARGET" = "17.0";
+        "SDKROOT" = "iphoneos";
+        "SWIFT_VERSION" = "5.0";
+      };
+    };
+    "04CCAB9C2FA442C9D2DBD015" = {
+      "isa" = "XCConfigurationList";
+      "buildConfigurations" = ("A06D67BFB6E2C35896D0DED1", "BCEE7239182F4A06F96EBAEC");
+      "defaultConfigurationIsVisible" = "0";
+      "defaultConfigurationName" = "Release";
+    };
+    "244210E48437B6556980A702" = {
+      "isa" = "PBXProject";
+      "compatibilityVersion" = "Xcode 14.0";
+      "developmentRegion" = "en";
+      "knownRegions" = ("en", "Base");
+      "hasScannedForEncodings" = "0";
+      "mainGroup" = "4813494D137E1631BBA301D5";
+      "productRefGroup" = "0A3E27B8CA818264D75C8D81";
+      "projectDirPath" = "";
+      "projectRoot" = "";
+      "targets" = ("34A04005BCAF206EEC990BD9");
+      "buildConfigurationList" = "04CCAB9C2FA442C9D2DBD015";
+    };
+  };
+  "rootObject" = "244210E48437B6556980A702";
+}

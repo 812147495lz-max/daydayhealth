@@ -1,0 +1,6 @@
+{
+  "error": {
+    "code": "locked",
+    "message": "Too many failed login attempts. Try again later."
+  }
+}

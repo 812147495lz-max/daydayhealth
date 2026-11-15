@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "next_cursor": "eyJhIjowLCJtIjoiaW5jIiwicyI6MSwidSI6IndiX3Vzcl9leGFtcGxlIiwidiI6MX0.3f0c9f5a2d1b7c4e8a6f0d2b9c1e5a7d",
+  "has_more": false,
+  "changes": [
+    {
+      "op": "upsert",
+      "workout_id": "wb_123",
+      "workout": {
+        "id": "wb_123",
+        "source": "opengym",
+        "source_id": "w_456",
+        "date": "2026-11-04",
+        "started_at": "2026-11-04T10:00:00Z",
+        "ended_at": "2026-11-04T11:00:00Z",
+        "name": "胸部训练",
+        "exercises": [
+          {
+            "id": "0025",
+            "name": "杠铃卧推",
+            "sets": [
+              {
+                "index": 1,
+                "weight_kg": 40,
+                "reps": 10,
+                "seconds": null,
+                "rpe": null,
+                "rir": 2,
+                "warmup": false
+              },
+              {
+                "index": 2,
+                "weight_kg": 45,
+                "reps": 8,
+                "seconds": null,
+                "rpe": 8,
+                "rir": null,
+                "warmup": false
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

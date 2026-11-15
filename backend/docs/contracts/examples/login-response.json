@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "token": "wb_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+  "token_type": "Bearer",
+  "user_id": "wb_usr_example",
+  "username": "myuser",
+  "cf_access_client_id": "xxxxxxxxxxxxxxxxxxxxxxxxxxxx.access",
+  "cf_access_client_secret": "cfast_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+  "last_login_at": "2026-11-04T08:00:00Z",
+  "last_login_ip": "203.0.113.5",
+  "anomaly": false,
+  "anomaly_reasons": [],
+  "must_change_password": false
+}
